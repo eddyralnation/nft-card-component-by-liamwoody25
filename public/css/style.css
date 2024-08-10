@@ -1,0 +1,195 @@
+/*******  General  **********/
+
+:root{
+    ---main-color:#8BACDA;
+    ---second-color: #00FFF7;
+    ---VDB-1-bg-color:#0D182B;
+    ---VDB-2-card-color:#14253D;
+    ---VDB-3-color:#2F415B;
+    ---txt-color: #FFFFFF;
+}
+.overflow-wrapper{
+    overflow-x: hidden;
+}
+body{
+    background-color: var(---VDB-1-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 152px 0;
+    font-family: 'Outfit',sans-serif;
+}
+
+.card{
+    width: 350px;
+    height: 596px;
+    background-color: var(---VDB-2-card-color);
+    border-radius: 15px;
+}
+
+
+
+.card-content p{
+    margin-left: 6.48px;
+    color: var(---second-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text h2{
+    margin: 0px 24px;
+    width: 302px;
+    color: var(---txt-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text p{
+    margin:16px ;
+    width: 302px;
+    margin-left: 24px;
+    color: var(---main-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.data-body {
+    margin: 0px 24px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.info p{
+    justify-content: space-around;
+    color: #8BACDA;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color: #00FFF7;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+
+.money{
+   display: flex;
+   align-items:center;
+}
+
+.money p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+hr{
+  border: 1px solid var(---VDB-3-color);
+}
+
+
+.icon-img{
+    margin: 0px 24px;
+    width: 11px;
+    height: 18px;
+}
+
+.card-img{
+    border-radius: 8px;
+    margin: 24px;
+    width: 302px;
+    height: 302px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*Image hover*/
+.card .card-content .image img:hover{
+    opacity: 60%;
+    transform: rotateX(10deg);
+}
+/*Image added(eye icon)*/
+ion-icon
+{
+    font-size: 2em;
+    color: #fff;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0%;
+    transition: 0.5s;
+    margin-top: 20px;
+    cursor: none;
+}
+/*Image hover2*/
+.card .card-content .image:hover ion-icon {
+    opacity: 100%;
+    margin-top: 0px;
+}
+
+.avatar {
+    align-items: center;
+    display: flex;
+}
+
+.avatar p{
+    margin-left: 0px;
+    color: var(---main-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.avatar-img{
+    margin: 0px 24px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    width: 33px;
+    height: 33px;
+    border-radius: 33px;
+
+}
+
+/*********  media-query(edited,done only for mobile perspective)  ************/
+
+
+@media only screen and (max-width: 480px)
+{
+    article 
+    {
+        transform: scale(0.8);
+        position: absolute;
+        top: 0%;
+    }
+    ion-icon
+    {
+        position: absolute;
+        top: 30%;
+    }
+}
